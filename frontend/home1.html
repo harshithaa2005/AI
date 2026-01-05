@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexicon AI | Explain Anything</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo"><span>AI</span></div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">History</a></li>
+          
+        </ul>
+
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="hero-section">
+
+        <header class="hero-content">
+            <h1>Master any concept.</h1>
+            <p>Enter a word or phrase below to get a clear, concise explanation.</p>
+        </header>
+
+        <!-- Search Input -->
+        <div class="search-container">
+            <div class="input-wrapper">
+                <input 
+                    type="text" 
+                    id="userInput" 
+                    placeholder="e.g., Quantum Entanglement..."
+                    autocomplete="off"
+                >
+                <button id="explainBtn" class="btn-primary">
+                    Explain
+                </button>
+            </div>
+        </div>
+
+        <!-- Output Card -->
+        <section id="outputCard" class="output-card">
+            <div class="output-header">
+                <span class="tag"></span>
+                <h2 id="resultTitle">Result</h2>
+            </div>
+
+            <div class="output-body">
+                <p id="resultText">
+                    Your explanation will appear here...
+                </p>
+            </div>
+
+            <div class="output-footer">
+                <button type="button" onclick="clearOutput()">Clear</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- JS -->
+    <script src="home.js"></script>
+</body>
+</html>
