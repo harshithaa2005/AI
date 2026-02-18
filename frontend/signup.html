@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up | Lexicon AI</title>
+
+  <!-- ✅ Shared Auth Styling -->
+  <link rel="stylesheet" href="/static/css/auth.css">
+</head>
+<body>
+
+  <!-- ✅ Navbar (same feel as homepage) -->
+  <header class="navbar">
+    <h1 class="logo">Lexicon AI</h1>
+  </header>
+
+  <!-- ✅ Centered Container -->
+  <main class="auth-container">
+    <div class="card auth-card">
+
+      <h2>Create Account</h2>
+      <p class="subtitle">Join Lexicon AI and explore science with AI</p>
+
+      <form id="signupForm">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+
+        <button type="submit" class="primary-btn">
+          Sign Up
+        </button>
+      </form>
+
+      <p id="errorMsg" class="error"></p>
+
+      <p class="switch-link">
+        Already have an account?
+        <a href="/signin">Sign in</a>
+      </p>
+
+    </div>
+  </main>
+
+  <!-- ✅ JS -->
+  <script src="/static/js/signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard | Lexicon AI</title>
+
+  <link rel="stylesheet" href="/static/css/admin.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- BACKGROUND -->
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar glass">
+  <div class="logo">🛠 <span>Admin Panel</span></div>
+
+  <div class="nav-right">
+    <span class="admin-name" id="adminName">Admin</span>
+    <button onclick="logout()">Logout</button>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main class="container">
+
+  <h1 class="title">Lexicon AI Administration</h1>
+
+  <!-- USERS -->
+  <section class="card glass">
+    <h2>👥 Users</h2>
+    <table id="usersTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>2</td>
+          <td>Harshitha_Kosuru</td>
+          <td>harshithakosuru156@gmail.com</td>
+          <td>User</td>
+          <td>-</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>charitha</td>
+          <td>charitha@gmail.com</td>
+          <td>User</td>
+          <td>-</td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td>shruthi</td>
+          <td>tupakula12@gmail.com</td>
+          <td>User</td>
+          <td>-</td>
+        </tr>
+
+        <tr>
+          <td>5</td>
+          <td>test</td>
+          <td>test@gmail.com</td>
+          <td>User</td>
+          <td>-</td>
+        </tr>
+
+        <tr>
+          <td>6</td>
+          <td>praneetha</td>
+          <td>praneetha@gmail.com</td>
+          <td>User</td>
+          <td>-</td>
+        </tr>
+
+        <tr>
+          <td>7</td>
+          <td>kosuru</td>
+          <td>kosuru@gmail.com</td>
+          <td>User</td>
+          <td>-</td>
+        </tr>
+
+        <tr>
+          <td>8</td>
+          <td>krishna</td>
+          <td>krishna@gmail.com</td>
+          <td>User</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- PROMPTS -->
+  <section class="card glass">
+    <h2>📜 User Prompts</h2>
+    <table id="promptsTable">
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Term</th>
+          <th>Level</th>
+          <th>Language</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Harshitha_Kosuru</td>
+          <td>Photosynthesis</td>
+          <td>Basic</td>
+          <td>English</td>
+          <td>2026-02-05</td>
+        </tr>
+
+        <tr>
+          <td>charitha</td>
+          <td>Quantum Mechanics</td>
+          <td>Professional</td>
+          <td>English</td>
+          <td>2026-02-04</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<script>
+  function logout() {
+    window.location.href = "/signin";
+  }
+</script>
+
+</body>
+</html>

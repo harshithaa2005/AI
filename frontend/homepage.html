@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lexicon AI</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/static/css/homepage.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- BACKGROUND GLOWS -->
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+<div class="orb orb3"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar glass">
+  <div class="logo">🧠 <span>Lexicon AI</span></div>
+
+  <div class="nav-right">
+    <!-- FIX: Use openHistory() instead of loadHistory() -->
+    <button class="nav-btn" onclick="openHistory()">📜 History</button>
+
+    <select id="level">
+      <option value="basic">Basic</option>
+      <option value="intermediate">Intermediate</option>
+      <option value="professional">Professional</option>
+    </select>
+
+    <select id="languageSelect">
+      <option value="en">English</option>
+      <option value="te">తెలుగు</option>
+      <option value="hi">हिन्दी</option>
+    </select>
+
+    <div class="user-chip">
+      👤 <span id="username">User</span>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main class="container">
+
+  <h1 class="hero">
+    Explain Anything.<br>
+    <span>Powered by AI.</span>
+  </h1>
+
+  <p class="tagline">
+    Smart explanations based on your language and level
+  </p>
+
+  <!-- SEARCH -->
+  <div class="search-box glass">
+    <input
+      id="query"
+      placeholder="Enter a scientific concept..."
+      autocomplete="off"
+    />
+    <button class="mic" title="Voice input (coming soon)">🎤</button>
+  </div>
+
+  <button class="ai-btn" onclick="generateExplanation()">
+    ✨ Generate Explanation
+  </button>
+
+  <!-- OUTPUT -->
+  <section id="output" class="output glass">
+    Your AI-generated explanation will appear here ✨
+  </section>
+
+  <!-- JSON TOGGLE -->
+  <div class="json-toggle">
+    <button class="ai-btn small" onclick="toggleJSON()">
+      🧾 View JSON Response
+    </button>
+  </div>
+
+  <!-- JSON OUTPUT -->
+  <!-- FIX: Hidden by default -->
+  <pre id="jsonOutput" class="json-box" style="display:none;"></pre>
+
+</main>
+
+<!-- HISTORY MODAL -->
+<div id="historyModal" class="history-modal">
+  <div class="history-card glass">
+    <h2>📜 Search History</h2>
+    <ul id="historyList"></ul>
+    <button class="ai-btn small" onclick="closeHistory()">Close</button>
+  </div>
+</div>
+
+<!-- JS -->
+<script src="/static/js/homepage.js"></script>
+</body>
+</html>

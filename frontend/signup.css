@@ -1,0 +1,13 @@
+/* ================================
+   AUTH SELECT (ROLE)
+================================ */
+
+.auth-card select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background: white;
+}
