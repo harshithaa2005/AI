@@ -1,0 +1,308 @@
+/* ==============================
+   RESET & BASE
+============================== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Poppins",sans-serif;
+}
+
+body{
+  background: radial-gradient(circle at top left,#1a1b3a,#0a0c1b);
+  color:#f5f3ff;
+  min-height:100vh;
+  overflow-x:hidden;
+  position:relative;
+}
+
+/* ==============================
+   GLASS EFFECT
+============================== */
+.glass{
+  background:rgba(255,255,255,0.06);
+  backdrop-filter:blur(22px);
+  border-radius:20px;
+  border:1px solid rgba(255,255,255,0.15);
+  box-shadow:0 10px 40px rgba(0,0,0,0.45);
+}
+
+/* ==============================
+   FLOATING ORBS
+============================== */
+.orb{
+  position:fixed;
+  border-radius:50%;
+  filter:blur(150px);
+  opacity:0.55;
+  z-index:-1;
+  animation:float 18s infinite alternate ease-in-out;
+}
+
+.orb1{
+  width:280px;
+  height:280px;
+  background:#7c3aed;
+  top:8%;
+  left:6%;
+}
+
+.orb2{
+  width:300px;
+  height:300px;
+  background:#06b6d4;
+  bottom:8%;
+  right:6%;
+}
+
+.orb3{
+  width:220px;
+  height:220px;
+  background:#9333ea;
+  top:45%;
+  right:35%;
+}
+
+@keyframes float{
+  from{transform:translateY(0px);}
+  to{transform:translateY(-40px);}
+}
+
+/* ==============================
+   NAVBAR
+============================== */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 45px;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:600;
+  letter-spacing:0.5px;
+}
+
+.logo span{
+  color:#c084fc;
+}
+
+.nav-right{
+  display:flex;
+  gap:14px;
+  align-items:center;
+}
+
+/* ==============================
+   NAV BUTTONS
+============================== */
+.nav-btn{
+  padding:8px 16px;
+  border-radius:12px;
+  border:none;
+  background:rgba(168,85,247,0.25);
+  color:white;
+  cursor:pointer;
+  transition:all 0.3s ease;
+}
+
+.nav-btn:hover{
+  background:rgba(168,85,247,0.45);
+  transform:translateY(-2px);
+}
+
+/* ==============================
+   DROPDOWNS
+============================== */
+select{
+  padding:8px 12px;
+  border-radius:12px;
+  border:none;
+  background:rgba(255,255,255,0.85);
+  color:#111;
+  font-weight:500;
+  cursor:pointer;
+  transition:all 0.2s;
+}
+
+select:hover{
+  box-shadow:0 0 8px rgba(192,132,252,0.6);
+}
+
+.user-chip{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+/* ==============================
+   MAIN CONTAINER
+============================== */
+.container{
+  max-width:880px;
+  margin:90px auto;
+  text-align:center;
+}
+
+/* ==============================
+   HERO SECTION
+============================== */
+.hero{
+  font-size:52px;
+  font-weight:600;
+  letter-spacing:0.4px;
+}
+
+.hero span{
+  background:linear-gradient(90deg,#c084fc,#60a5fa);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.tagline{
+  margin:18px 0 46px;
+  opacity:0.85;
+  font-size:17px;
+}
+
+/* ==============================
+   SEARCH BOX
+============================== */
+.search-box{
+  display:flex;
+  gap:12px;
+  padding:16px;
+}
+
+.search-box input{
+  flex:1;
+  padding:14px 16px;
+  border-radius:14px;
+  border:none;
+  outline:none;
+  font-size:15px;
+  background:rgba(255,255,255,0.9);
+}
+
+.search-box input:focus{
+  box-shadow:0 0 10px rgba(192,132,252,0.6);
+}
+
+/* ==============================
+   MIC BUTTON
+============================== */
+.mic{
+  padding:14px;
+  border-radius:14px;
+  border:none;
+  background:rgba(192,132,252,0.3);
+  color:white;
+  cursor:pointer;
+  transition:all 0.25s ease;
+}
+
+.mic:hover{
+  background:#a855f7;
+  transform:scale(1.08);
+}
+
+/* ==============================
+   AI BUTTON
+============================== */
+.ai-btn{
+  margin-top:28px;
+  padding:15px 36px;
+  border-radius:20px;
+  border:none;
+  background:linear-gradient(135deg,#a855f7,#7c3aed);
+  color:white;
+  font-weight:600;
+  font-size:15px;
+  cursor:pointer;
+  transition:all 0.3s ease;
+}
+
+.ai-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 14px 35px rgba(168,85,247,0.55);
+}
+
+.ai-btn.small{
+  width:100%;
+  margin-top:18px;
+}
+
+/* ==============================
+   OUTPUT BOX
+============================== */
+.output{
+  margin-top:46px;
+  padding:30px;
+  min-height:160px;
+  text-align:left;
+  line-height:1.75;
+  font-size:15px;
+}
+
+.output h3{
+  margin-top:18px;
+  color:#c084fc;
+}
+
+/* ==============================
+   JSON BOX
+============================== */
+.json-box{
+  display:none;
+  margin-top:20px;
+  background:#0a0518;
+  color:#c084fc;
+  padding:16px;
+  border-radius:14px;
+  overflow-x:auto;
+  font-size:13px;
+}
+
+/* ==============================
+   HISTORY MODAL
+============================== */
+.history-modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.75);
+  backdrop-filter:blur(6px);
+  display:none;
+  align-items:center;
+  justify-content:center;
+}
+
+.history-card{
+  width:440px;
+  max-height:70vh;
+  padding:28px;
+  overflow-y:auto;
+}
+
+.history-card h2{
+  margin-bottom:18px;
+  color:#c084fc;
+}
+
+#historyList{
+  list-style:none;
+}
+
+#historyList li{
+  padding:12px;
+  margin-bottom:12px;
+  border-radius:10px;
+  background:rgba(255,255,255,0.08);
+  cursor:pointer;
+  transition:all 0.25s ease;
+}
+
+#historyList li:hover{
+  background:rgba(168,85,247,0.3);
+  transform:translateX(4px);
+}
