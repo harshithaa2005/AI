@@ -1,0 +1,23 @@
+{
+  "app_name": "Lexicon AI",
+  "history": "History",
+  "level_basic": "Basic",
+  "level_intermediate": "Intermediate",
+  "level_professional": "Professional",
+  "logout": "Logout",
+  "hero_title": "Explain Anything.",
+  "hero_subtitle": "Powered by AI.",
+  "tagline": "Smart explanations based on your language and level",
+  "search_placeholder": "Enter a scientific concept...",
+  "generate_btn": "✨ Generate Explanation",
+  "output_placeholder": "Your AI-generated explanation will appear here ✨",
+  "view_json": "🧾 View JSON Response",
+  "history_title": "📜 Search History",
+  "close": "Close",
+  "definition": "📘 Definition",
+  "explanation": "📖 Explanation",
+  "advantages": "✅ Advantages",
+  "disadvantages": "⚠️ Disadvantages",
+  "loading": "⏳ Generating explanation...",
+  "no_term": "⚠️ Please enter a term."
+}

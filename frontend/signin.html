@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In | Lexicon AI</title>
+
+  <!-- ✅ SAME CSS -->
+  <link rel="stylesheet" href="/static/css/auth.css">
+</head>
+<body>
+
+<!-- ✅ SAME NAVBAR STYLE -->
+<header class="navbar">
+  <h1 class="logo">Lexicon AI</h1>
+</header>
+
+<!-- ✅ THIS FIXES CENTERING -->
+<main class="container">
+  <div class="card auth-card">
+
+    <h2>Welcome Back</h2>
+    <p class="subtitle">Sign in to continue exploring with AI</p>
+
+    <form id="signinForm">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+
+      <button type="submit" class="primary-btn">
+        Login
+      </button>
+    </form>
+
+    <p id="errorMsg" class="error"></p>
+
+    <p class="switch-link">
+      Don’t have an account?
+      <a href="/signup">Sign up</a>
+    </p>
+
+  </div>
+</main>
+
+<!-- ✅ JS -->
+<script src="/static/js/signin.js"></script>
+</body>
+</html>
